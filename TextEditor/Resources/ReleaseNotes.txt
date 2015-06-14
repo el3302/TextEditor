@@ -1,0 +1,23 @@
+What you need to know.
+
+Release 2.0.0.4
+
+1) Font Styles
+--------------
+
+   At the moment the Toolbar Bold, Italic and Underline only work individually.  
+   This means you can have Bold OR Italic OR Underline ut not any combination of them.
+   The Font Dialog box works fine.
+
+
+2) The Tools Menu
+-----------------
+   
+   The Menu items Spelling, Find and Insert Link have not yet been implemented.
+
+
+3) The Edit Menu
+----------------
+   
+   The Menu Item Insert Date/Time has been deactivated as it does not do what it used to.  
+   Bug #45 [Resolved]
