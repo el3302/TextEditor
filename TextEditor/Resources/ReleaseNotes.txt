@@ -2,26 +2,19 @@ Release 2.0.0.5
 ================
 
 //TEXT FORMATTING TOOLBAR
-- Changed the code that makes the visability of the toolbar.
-
-- Added Sizes to the font Size menu so it now has the regular items.
-  (8,9,10,11,12,14,16,18,24,36,48,72)
-
-- The fonts now active in the font dropdown (Calibri, Consolas, Times New Roman).  
-  These were chosen as they are usually installed by default on Windows.
-
-- The Bold, Italic and Underline buttons work individually. However a combination 
-  of these buttons cannot be used in combination.
-
-- Updated ToolTip Text to be more descriptive.
+* Changed the code that makes the visability of the toolbar.
+* Added Sizes to the font Size menu so it now has the regular items.  (8,9,10,11,12,14,16,18,24,36,48,72)
+* The fonts now active in the font dropdown (Calibri, Consolas, Times New Roman).  These were chosen as they are usually installed by default on Windows.
+* The Bold, Italic and Underline buttons work individually. However a combination of these buttons cannot be used in combination.
+* Updated ToolTip Text to be more descriptive.
 
 //BUGS
-- Nothing found or reported in this Release.
+* Nothing found or reported in this Release.
 
 //TODO
-  1. Code the Spelling menu item.
-  2. Code the Find menu item.
-  3. Code the Insert Link menu item.
+* Code the Spelling menu item.
+* Code the Find menu item.
+* Code the Insert Link menu item.
 
   These should be completed in the near future.
 
@@ -30,30 +23,27 @@ Release 2.0.0.4
 ================
 
 //CHANGES
-- This release was internal only.
+* This release was internal only.
 
 //BUGS
-- Nothing found or reported in this Release.
+* Nothing found or reported in this Release.
 
 //TODO
-  1. Code the Font dropdown.
-  2. Code the Font Size dropdown.
-  3. Code the Spelling menu item.
-  4. Code the Find menu item.
-  5. Code the Insert Link menu item.
+* Code the Font dropdown.
+* Code the Font Size dropdown.
+* Code the Spelling menu item.
+* Code the Find menu item.
+* Code the Insert Link menu item.
 
 
 Release 2.0.0.3
 ================
 
 //FONT STYLES
-- At the moment the Toolbar Bold, Italic and Underline only work individually.  
-  This means you can have Bold OR Italic OR Underline ut not any combination of them.
-  The Font Dialog box works fine.
+* At the moment the Toolbar Bold, Italic and Underline only work individually.  This means you can have Bold OR Italic OR Underline ut not any combination of them.  The Font Dialog box works fine.
 
 //THE TOOL MENU
-- The Menu items Spelling, Find and Insert Link have not yet been implemented.
+* The Menu items Spelling, Find and Insert Link have not yet been implemented.
 
 //THE EDIT MENU
-- Bug #45 [Resolved]
-  The Menu Item Insert Date/Time has been deactivated as it does not do what it used to.  
+* Bug #45 (Resolved).  The Menu Item Insert Date/Time has been deactivated as it does not do what it used to.  
