@@ -1,5 +1,4 @@
-Release 2.0.0.5
-================
+! Release 2.0.0.5
 
 //TEXT FORMATTING TOOLBAR
 * Changed the code that makes the visability of the toolbar.
@@ -19,8 +18,7 @@ Release 2.0.0.5
   These should be completed in the near future.
 
 
-Release 2.0.0.4
-================
+! Release 2.0.0.4
 
 //CHANGES
 * This release was internal only.
@@ -36,8 +34,7 @@ Release 2.0.0.4
 * Code the Insert Link menu item.
 
 
-Release 2.0.0.3
-================
+! Release 2.0.0.3
 
 //FONT STYLES
 * At the moment the Toolbar Bold, Italic and Underline only work individually.  This means you can have Bold OR Italic OR Underline ut not any combination of them.  The Font Dialog box works fine.
