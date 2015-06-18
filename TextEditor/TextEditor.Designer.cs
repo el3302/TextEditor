@@ -82,18 +82,25 @@
             this.dPrintSetup = new System.Windows.Forms.PageSetupDialog();
             this.toolbar = new System.Windows.Forms.ToolStrip();
             this.tFont = new System.Windows.Forms.ToolStripDropDownButton();
-            this.font1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.font2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.font3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ptCalibri = new System.Windows.Forms.ToolStripMenuItem();
+            this.ptConsolas = new System.Windows.Forms.ToolStripMenuItem();
+            this.ptTimes = new System.Windows.Forms.ToolStripMenuItem();
             this.tFontSize = new System.Windows.Forms.ToolStripDropDownButton();
-            this.ptToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ptToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ptToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ptToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ptSize8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ptSize9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ptSize10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ptSize11 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ptSize12 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ptSize14 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ptSize16 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ptSize24 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ptSize36 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ptSize48 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ptSize72 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
-            this.tBold = new System.Windows.Forms.ToolStripButton();
-            this.tItalic = new System.Windows.Forms.ToolStripButton();
-            this.tUnderline = new System.Windows.Forms.ToolStripButton();
+            this.ptBold = new System.Windows.Forms.ToolStripButton();
+            this.ptItalic = new System.Windows.Forms.ToolStripButton();
+            this.ptUnderline = new System.Windows.Forms.ToolStripButton();
             this.cMenu.SuspendLayout();
             this.menu.SuspendLayout();
             this.toolbar.SuspendLayout();
@@ -212,7 +219,7 @@
             this.mNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.mNew.Name = "mNew";
             this.mNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.mNew.Size = new System.Drawing.Size(146, 22);
+            this.mNew.Size = new System.Drawing.Size(152, 22);
             this.mNew.Text = "&New";
             this.mNew.Click += new System.EventHandler(this.mNew_Click);
             // 
@@ -222,14 +229,14 @@
             this.mOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.mOpen.Name = "mOpen";
             this.mOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.mOpen.Size = new System.Drawing.Size(146, 22);
+            this.mOpen.Size = new System.Drawing.Size(152, 22);
             this.mOpen.Text = "&Open";
             this.mOpen.Click += new System.EventHandler(this.mOpen_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(149, 6);
             // 
             // mSave
             // 
@@ -237,21 +244,21 @@
             this.mSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.mSave.Name = "mSave";
             this.mSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.mSave.Size = new System.Drawing.Size(146, 22);
+            this.mSave.Size = new System.Drawing.Size(152, 22);
             this.mSave.Text = "&Save";
             this.mSave.Click += new System.EventHandler(this.mSave_Click);
             // 
             // mSaveAs
             // 
             this.mSaveAs.Name = "mSaveAs";
-            this.mSaveAs.Size = new System.Drawing.Size(146, 22);
+            this.mSaveAs.Size = new System.Drawing.Size(152, 22);
             this.mSaveAs.Text = "Save As";
             this.mSaveAs.Click += new System.EventHandler(this.mSaveAs_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // mPrint
             // 
@@ -259,19 +266,19 @@
             this.mPrint.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.mPrint.Name = "mPrint";
             this.mPrint.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.mPrint.Size = new System.Drawing.Size(146, 22);
+            this.mPrint.Size = new System.Drawing.Size(152, 22);
             this.mPrint.Text = "&Print";
             this.mPrint.Click += new System.EventHandler(this.mPrint_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
             // mExit
             // 
             this.mExit.Name = "mExit";
-            this.mExit.Size = new System.Drawing.Size(146, 22);
+            this.mExit.Size = new System.Drawing.Size(152, 22);
             this.mExit.Text = "E&xit";
             this.mExit.Click += new System.EventHandler(this.mExit_Click);
             // 
@@ -486,9 +493,9 @@
             this.tFont,
             this.tFontSize,
             this.toolStripSeparator10,
-            this.tBold,
-            this.tItalic,
-            this.tUnderline});
+            this.ptBold,
+            this.ptItalic,
+            this.ptUnderline});
             this.toolbar.Location = new System.Drawing.Point(0, 24);
             this.toolbar.Name = "toolbar";
             this.toolbar.Size = new System.Drawing.Size(907, 25);
@@ -500,108 +507,172 @@
             // 
             this.tFont.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.tFont.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.font1ToolStripMenuItem,
-            this.font2ToolStripMenuItem,
-            this.font3ToolStripMenuItem});
+            this.ptCalibri,
+            this.ptConsolas,
+            this.ptTimes});
             this.tFont.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tFont.Name = "tFont";
             this.tFont.Size = new System.Drawing.Size(78, 22);
             this.tFont.Text = "Select Font";
             this.tFont.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             // 
-            // font1ToolStripMenuItem
+            // ptCalibri
             // 
-            this.font1ToolStripMenuItem.Name = "font1ToolStripMenuItem";
-            this.font1ToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
-            this.font1ToolStripMenuItem.Text = "Font1";
+            this.ptCalibri.Name = "ptCalibri";
+            this.ptCalibri.Size = new System.Drawing.Size(174, 22);
+            this.ptCalibri.Text = "Calibri";
+            this.ptCalibri.Click += new System.EventHandler(this.ptCalibri_Click);
             // 
-            // font2ToolStripMenuItem
+            // ptConsolas
             // 
-            this.font2ToolStripMenuItem.Name = "font2ToolStripMenuItem";
-            this.font2ToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
-            this.font2ToolStripMenuItem.Text = "Font2";
+            this.ptConsolas.Name = "ptConsolas";
+            this.ptConsolas.Size = new System.Drawing.Size(174, 22);
+            this.ptConsolas.Text = "Consolas";
+            this.ptConsolas.Click += new System.EventHandler(this.ptConsolas_Click);
             // 
-            // font3ToolStripMenuItem
+            // ptTimes
             // 
-            this.font3ToolStripMenuItem.Name = "font3ToolStripMenuItem";
-            this.font3ToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
-            this.font3ToolStripMenuItem.Text = "Font3";
+            this.ptTimes.Name = "ptTimes";
+            this.ptTimes.Size = new System.Drawing.Size(174, 22);
+            this.ptTimes.Text = "Times New Roman";
+            this.ptTimes.Click += new System.EventHandler(this.ptTimes_Click);
             // 
             // tFontSize
             // 
             this.tFontSize.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.tFontSize.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ptToolStripMenuItem,
-            this.ptToolStripMenuItem1,
-            this.ptToolStripMenuItem2,
-            this.ptToolStripMenuItem3});
+            this.ptSize8,
+            this.ptSize9,
+            this.ptSize10,
+            this.ptSize11,
+            this.ptSize12,
+            this.ptSize14,
+            this.ptSize16,
+            this.ptSize24,
+            this.ptSize36,
+            this.ptSize48,
+            this.ptSize72});
             this.tFontSize.Image = ((System.Drawing.Image)(resources.GetObject("tFontSize.Image")));
             this.tFontSize.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tFontSize.Name = "tFontSize";
             this.tFontSize.Size = new System.Drawing.Size(67, 22);
             this.tFontSize.Text = "Font Size";
+            this.tFontSize.ToolTipText = "Select Font Size";
             // 
-            // ptToolStripMenuItem
+            // ptSize8
             // 
-            this.ptToolStripMenuItem.Name = "ptToolStripMenuItem";
-            this.ptToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
-            this.ptToolStripMenuItem.Text = "12pt";
+            this.ptSize8.Name = "ptSize8";
+            this.ptSize8.Size = new System.Drawing.Size(152, 22);
+            this.ptSize8.Text = "8pt";
+            this.ptSize8.Click += new System.EventHandler(this.ptSize8_Click);
             // 
-            // ptToolStripMenuItem1
+            // ptSize9
             // 
-            this.ptToolStripMenuItem1.Name = "ptToolStripMenuItem1";
-            this.ptToolStripMenuItem1.Size = new System.Drawing.Size(97, 22);
-            this.ptToolStripMenuItem1.Text = "14pt";
+            this.ptSize9.Name = "ptSize9";
+            this.ptSize9.Size = new System.Drawing.Size(152, 22);
+            this.ptSize9.Text = "9pt";
+            this.ptSize9.Click += new System.EventHandler(this.ptSize9_Click);
             // 
-            // ptToolStripMenuItem2
+            // ptSize10
             // 
-            this.ptToolStripMenuItem2.Name = "ptToolStripMenuItem2";
-            this.ptToolStripMenuItem2.Size = new System.Drawing.Size(97, 22);
-            this.ptToolStripMenuItem2.Text = "16pt";
+            this.ptSize10.Name = "ptSize10";
+            this.ptSize10.Size = new System.Drawing.Size(152, 22);
+            this.ptSize10.Text = "10pt";
+            this.ptSize10.Click += new System.EventHandler(this.ptSize10_Click);
             // 
-            // ptToolStripMenuItem3
+            // ptSize11
             // 
-            this.ptToolStripMenuItem3.Name = "ptToolStripMenuItem3";
-            this.ptToolStripMenuItem3.Size = new System.Drawing.Size(97, 22);
-            this.ptToolStripMenuItem3.Text = "24pt";
+            this.ptSize11.Name = "ptSize11";
+            this.ptSize11.Size = new System.Drawing.Size(152, 22);
+            this.ptSize11.Text = "11pt";
+            this.ptSize11.Click += new System.EventHandler(this.ptSize11_Click);
+            // 
+            // ptSize12
+            // 
+            this.ptSize12.Name = "ptSize12";
+            this.ptSize12.Size = new System.Drawing.Size(152, 22);
+            this.ptSize12.Text = "12pt";
+            this.ptSize12.Click += new System.EventHandler(this.ptSize12_Click);
+            // 
+            // ptSize14
+            // 
+            this.ptSize14.Name = "ptSize14";
+            this.ptSize14.Size = new System.Drawing.Size(152, 22);
+            this.ptSize14.Text = "14pt";
+            this.ptSize14.Click += new System.EventHandler(this.ptSize14_Click);
+            // 
+            // ptSize16
+            // 
+            this.ptSize16.Name = "ptSize16";
+            this.ptSize16.Size = new System.Drawing.Size(152, 22);
+            this.ptSize16.Text = "16pt";
+            this.ptSize16.Click += new System.EventHandler(this.ptSize16_Click);
+            // 
+            // ptSize24
+            // 
+            this.ptSize24.Name = "ptSize24";
+            this.ptSize24.Size = new System.Drawing.Size(152, 22);
+            this.ptSize24.Text = "24pt";
+            this.ptSize24.Click += new System.EventHandler(this.ptSize24_Click);
+            // 
+            // ptSize36
+            // 
+            this.ptSize36.Name = "ptSize36";
+            this.ptSize36.Size = new System.Drawing.Size(152, 22);
+            this.ptSize36.Text = "36pt";
+            this.ptSize36.Click += new System.EventHandler(this.ptSize36_Click);
+            // 
+            // ptSize48
+            // 
+            this.ptSize48.Name = "ptSize48";
+            this.ptSize48.Size = new System.Drawing.Size(152, 22);
+            this.ptSize48.Text = "48pt";
+            this.ptSize48.Click += new System.EventHandler(this.ptSize48_Click);
+            // 
+            // ptSize72
+            // 
+            this.ptSize72.Name = "ptSize72";
+            this.ptSize72.Size = new System.Drawing.Size(152, 22);
+            this.ptSize72.Text = "72pt";
+            this.ptSize72.Click += new System.EventHandler(this.ptSize72_Click);
             // 
             // toolStripSeparator10
             // 
             this.toolStripSeparator10.Name = "toolStripSeparator10";
             this.toolStripSeparator10.Size = new System.Drawing.Size(6, 25);
             // 
-            // tBold
+            // ptBold
             // 
-            this.tBold.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tBold.Image = ((System.Drawing.Image)(resources.GetObject("tBold.Image")));
-            this.tBold.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tBold.Name = "tBold";
-            this.tBold.Size = new System.Drawing.Size(23, 22);
-            this.tBold.Text = "B";
-            this.tBold.ToolTipText = "Bold";
-            this.tBold.Click += new System.EventHandler(this.tBold_Click);
+            this.ptBold.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.ptBold.Image = ((System.Drawing.Image)(resources.GetObject("ptBold.Image")));
+            this.ptBold.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ptBold.Name = "ptBold";
+            this.ptBold.Size = new System.Drawing.Size(23, 22);
+            this.ptBold.Text = "B";
+            this.ptBold.ToolTipText = "Make Text Bold";
+            this.ptBold.Click += new System.EventHandler(this.ptBold_Click);
             // 
-            // tItalic
+            // ptItalic
             // 
-            this.tItalic.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tItalic.Image = ((System.Drawing.Image)(resources.GetObject("tItalic.Image")));
-            this.tItalic.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tItalic.Name = "tItalic";
-            this.tItalic.Size = new System.Drawing.Size(23, 22);
-            this.tItalic.Text = "I";
-            this.tItalic.ToolTipText = "Italic";
-            this.tItalic.Click += new System.EventHandler(this.tItalic_Click);
+            this.ptItalic.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.ptItalic.Image = ((System.Drawing.Image)(resources.GetObject("ptItalic.Image")));
+            this.ptItalic.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ptItalic.Name = "ptItalic";
+            this.ptItalic.Size = new System.Drawing.Size(23, 22);
+            this.ptItalic.Text = "I";
+            this.ptItalic.ToolTipText = "Make Text Italic";
+            this.ptItalic.Click += new System.EventHandler(this.ptItalic_Click);
             // 
-            // tUnderline
+            // ptUnderline
             // 
-            this.tUnderline.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.tUnderline.Image = ((System.Drawing.Image)(resources.GetObject("tUnderline.Image")));
-            this.tUnderline.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tUnderline.Name = "tUnderline";
-            this.tUnderline.Size = new System.Drawing.Size(23, 22);
-            this.tUnderline.Text = "U";
-            this.tUnderline.ToolTipText = "Underline";
-            this.tUnderline.Click += new System.EventHandler(this.tUnderline_Click);
+            this.ptUnderline.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.ptUnderline.Image = ((System.Drawing.Image)(resources.GetObject("ptUnderline.Image")));
+            this.ptUnderline.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ptUnderline.Name = "ptUnderline";
+            this.ptUnderline.Size = new System.Drawing.Size(23, 22);
+            this.ptUnderline.Text = "U";
+            this.ptUnderline.ToolTipText = "Make Text Underlined";
+            this.ptUnderline.Click += new System.EventHandler(this.ptUnderline_Click);
             // 
             // textEditor
             // 
@@ -679,20 +750,27 @@
         private System.Windows.Forms.PageSetupDialog dPrintSetup;
         private System.Windows.Forms.ToolStrip toolbar;
         private System.Windows.Forms.ToolStripDropDownButton tFont;
-        private System.Windows.Forms.ToolStripMenuItem font1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem font2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem font3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ptCalibri;
+        private System.Windows.Forms.ToolStripMenuItem ptTimes;
+        private System.Windows.Forms.ToolStripMenuItem ptConsolas;
         private System.Windows.Forms.ToolStripDropDownButton tFontSize;
-        private System.Windows.Forms.ToolStripMenuItem ptToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ptToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem ptToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem ptToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem ptSize12;
+        private System.Windows.Forms.ToolStripMenuItem ptSize14;
+        private System.Windows.Forms.ToolStripMenuItem ptSize16;
+        private System.Windows.Forms.ToolStripMenuItem ptSize24;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
-        private System.Windows.Forms.ToolStripButton tBold;
-        private System.Windows.Forms.ToolStripButton tItalic;
-        private System.Windows.Forms.ToolStripButton tUnderline;
+        private System.Windows.Forms.ToolStripButton ptBold;
+        private System.Windows.Forms.ToolStripButton ptItalic;
+        private System.Windows.Forms.ToolStripButton ptUnderline;
         private System.Windows.Forms.ToolStripMenuItem mToolbar;
         private System.Windows.Forms.ToolStripMenuItem mReleaseNotes;
+        private System.Windows.Forms.ToolStripMenuItem ptSize36;
+        private System.Windows.Forms.ToolStripMenuItem ptSize48;
+        private System.Windows.Forms.ToolStripMenuItem ptSize72;
+        private System.Windows.Forms.ToolStripMenuItem ptSize8;
+        private System.Windows.Forms.ToolStripMenuItem ptSize9;
+        private System.Windows.Forms.ToolStripMenuItem ptSize10;
+        private System.Windows.Forms.ToolStripMenuItem ptSize11;
     }
 }
 

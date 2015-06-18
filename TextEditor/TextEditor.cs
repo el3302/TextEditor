@@ -16,7 +16,9 @@ namespace TextEditor
         private StreamReader sPrint;
         private StreamReader sr = null;
         private StreamWriter sw = null;
-        int count = 1;
+        private Font boldFont;
+        private Font italicFont;
+        private Font underlineFont;
 
         public textEditor()
         {
@@ -103,7 +105,7 @@ namespace TextEditor
             txt.Text = TextBefore + currentDate + textAfter;
         }
 
-        #endregion
+     #endregion
 
      #region Tools Dropdown
 
@@ -119,17 +121,14 @@ namespace TextEditor
 
         private void mToolbar_Click(object sender, EventArgs e)
         {
-            count++;
-
-            if (count % 2 == 0)
+            if (toolbar.Visible == true)
             {
-                toolbar.Show();
+                toolbar.Visible = false;
             }
             else
             {
-                toolbar.Hide();
+                toolbar.Visible = true;
             }
-
         }
 
         private void mFind_Click(object sender, EventArgs e)
@@ -165,50 +164,96 @@ namespace TextEditor
             rNotes.Show();
         }
 
-     #endregion
+        #endregion
 
      #region Toolbar
 
-        private void tBold_Click(object sender, EventArgs e)
+        private void ptCalibri_Click(object sender, EventArgs e)
         {
-            count++;
-
-            if (count % 2 == 0)
-            {
-                txt.SelectionFont = new Font(txt.SelectionFont, FontStyle.Regular);
-            }
-            else
-            {
-                txt.SelectionFont = new Font(txt.SelectionFont, FontStyle.Bold);
-            }
+            txt.SelectionFont = new Font("Calibri", txt.Font.Size);
         }
 
-        private void tItalic_Click(object sender, EventArgs e)
+        private void ptConsolas_Click(object sender, EventArgs e)
         {
-            count++;
-
-            if (count % 2 == 0)
-            {
-                txt.SelectionFont = new Font(txt.SelectionFont, FontStyle.Regular);
-            }
-            else
-            {
-                txt.SelectionFont = new Font(txt.SelectionFont, FontStyle.Italic);
-            }
+            txt.SelectionFont = new Font("Consolas", txt.Font.Size);
         }
 
-        private void tUnderline_Click(object sender, EventArgs e)
+        private void ptTimes_Click(object sender, EventArgs e)
         {
-            count++;
+            txt.SelectionFont = new Font("Times", txt.Font.Size);
+        }
 
-            if (count % 2 == 0)
-            {
-                txt.SelectionFont = new Font(txt.SelectionFont, FontStyle.Regular);
-            }
-            else
-            {
-                txt.SelectionFont = new Font(txt.SelectionFont, FontStyle.Underline);
-            }
+        private void ptSize8_Click(object sender, EventArgs e)
+        {
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 8);
+        }
+
+        private void ptSize9_Click(object sender, EventArgs e)
+        {
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 9);
+        }
+
+        private void ptSize10_Click(object sender, EventArgs e)
+        {
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 10);
+        }
+
+        private void ptSize11_Click(object sender, EventArgs e)
+        {
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 11);
+        }
+
+        private void ptSize12_Click(object sender, EventArgs e)
+        {
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 12);
+        }
+
+        private void ptSize14_Click(object sender, EventArgs e)
+        {
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 14);
+        }
+
+        private void ptSize16_Click(object sender, EventArgs e)
+        {
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 16);
+        }
+
+        private void ptSize24_Click(object sender, EventArgs e)
+        {
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 24);
+        }
+
+        private void ptSize36_Click(object sender, EventArgs e)
+        {
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 36);
+        }
+
+        private void ptSize48_Click(object sender, EventArgs e)
+        {
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 48);
+        }
+
+        private void ptSize72_Click(object sender, EventArgs e)
+        {
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 72);
+        }
+
+        private void ptBold_Click(object sender, EventArgs e)
+        {
+            boldFont = txt.SelectionFont;
+            txt.SelectionFont = new Font(boldFont, boldFont.Bold ? FontStyle.Regular : FontStyle.Bold);
+        }
+
+        private void ptItalic_Click(object sender, EventArgs e)
+        {
+            italicFont = txt.SelectionFont;
+            txt.SelectionFont = new Font(italicFont, italicFont.Italic ? FontStyle.Regular : FontStyle.Italic);
+        }
+
+        private void ptUnderline_Click(object sender, EventArgs e)
+        {
+            underlineFont = txt.SelectionFont;
+            txt.SelectionFont = new Font(underlineFont, underlineFont.Underline ? FontStyle.Regular : FontStyle.Underline);
         }
 
      #endregion
@@ -379,6 +424,7 @@ namespace TextEditor
 
             e.HasMorePages = !sPrint.EndOfStream;
         }
+
 
         #endregion
 
