@@ -1,4 +1,4 @@
-!! Release 2.0.0.5
+!! Release 2.0.0.6
 
 *//TEXT FORMATTING TOOLBAR*
 * Changed the code that makes the visability of the toolbar.
@@ -16,7 +16,16 @@
 * Code the Insert Link menu item.
 
   These should be completed in the near future.
+  
+!! Release 2.0.0.4
 
+*//CHANGES*
+* This release was internal only.
+
+*//BUGS*
+* Nothing found or reported in this Release.
+
+*//TODO*
 
 !! Release 2.0.0.4
 
@@ -27,12 +36,6 @@
 * Nothing found or reported in this Release.
 
 *//TODO*
-* Code the Font dropdown.
-* Code the Font Size dropdown.
-* Code the Spelling menu item.
-* Code the Find menu item.
-* Code the Insert Link menu item.
-
 
 !! Release 2.0.0.3
 
