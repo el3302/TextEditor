@@ -1,3 +1,15 @@
+!! Release 2.0.0.7
+
+*//TOOLs MENU DROPDOWN*
+* Removed the Insert Link from the Tools Menu.  Any text that starts http:// or Https:// automatically becomes a link.  The ability to add a link to 'normal' text will be considered as a future deature.
+
+*//BUGS*
+* Nothing found or reported in this Release.
+
+*//TODO*
+* Code the Spelling menu item.
+* Code the Find menu item.
+
 !! Release 2.0.0.6
 
 *//TEXT FORMATTING TOOLBAR*
