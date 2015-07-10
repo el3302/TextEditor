@@ -110,11 +110,12 @@
             // 
             this.txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt.ContextMenuStrip = this.cMenu;
-            this.txt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt.Location = new System.Drawing.Point(0, 24);
+            this.txt.Location = new System.Drawing.Point(0, 27);
             this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(907, 599);
+            this.txt.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth;
+            this.txt.ShowSelectionMargin = true;
+            this.txt.Size = new System.Drawing.Size(907, 570);
             this.txt.TabIndex = 5;
             this.txt.Text = "";
             // 
@@ -219,7 +220,7 @@
             this.mNew.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.mNew.Name = "mNew";
             this.mNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.mNew.Size = new System.Drawing.Size(152, 22);
+            this.mNew.Size = new System.Drawing.Size(146, 22);
             this.mNew.Text = "&New";
             this.mNew.Click += new System.EventHandler(this.mNew_Click);
             // 
@@ -229,14 +230,14 @@
             this.mOpen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.mOpen.Name = "mOpen";
             this.mOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.mOpen.Size = new System.Drawing.Size(152, 22);
+            this.mOpen.Size = new System.Drawing.Size(146, 22);
             this.mOpen.Text = "&Open";
             this.mOpen.Click += new System.EventHandler(this.mOpen_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // mSave
             // 
@@ -244,21 +245,21 @@
             this.mSave.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.mSave.Name = "mSave";
             this.mSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.mSave.Size = new System.Drawing.Size(152, 22);
+            this.mSave.Size = new System.Drawing.Size(146, 22);
             this.mSave.Text = "&Save";
             this.mSave.Click += new System.EventHandler(this.mSave_Click);
             // 
             // mSaveAs
             // 
             this.mSaveAs.Name = "mSaveAs";
-            this.mSaveAs.Size = new System.Drawing.Size(152, 22);
+            this.mSaveAs.Size = new System.Drawing.Size(146, 22);
             this.mSaveAs.Text = "Save As";
             this.mSaveAs.Click += new System.EventHandler(this.mSaveAs_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             // 
             // mPrint
             // 
@@ -266,19 +267,19 @@
             this.mPrint.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.mPrint.Name = "mPrint";
             this.mPrint.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.mPrint.Size = new System.Drawing.Size(152, 22);
+            this.mPrint.Size = new System.Drawing.Size(146, 22);
             this.mPrint.Text = "&Print";
             this.mPrint.Click += new System.EventHandler(this.mPrint_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
             // 
             // mExit
             // 
             this.mExit.Name = "mExit";
-            this.mExit.Size = new System.Drawing.Size(152, 22);
+            this.mExit.Size = new System.Drawing.Size(146, 22);
             this.mExit.Text = "E&xit";
             this.mExit.Click += new System.EventHandler(this.mExit_Click);
             // 
@@ -562,77 +563,77 @@
             // ptSize8
             // 
             this.ptSize8.Name = "ptSize8";
-            this.ptSize8.Size = new System.Drawing.Size(152, 22);
+            this.ptSize8.Size = new System.Drawing.Size(97, 22);
             this.ptSize8.Text = "8pt";
             this.ptSize8.Click += new System.EventHandler(this.ptSize8_Click);
             // 
             // ptSize9
             // 
             this.ptSize9.Name = "ptSize9";
-            this.ptSize9.Size = new System.Drawing.Size(152, 22);
+            this.ptSize9.Size = new System.Drawing.Size(97, 22);
             this.ptSize9.Text = "9pt";
             this.ptSize9.Click += new System.EventHandler(this.ptSize9_Click);
             // 
             // ptSize10
             // 
             this.ptSize10.Name = "ptSize10";
-            this.ptSize10.Size = new System.Drawing.Size(152, 22);
+            this.ptSize10.Size = new System.Drawing.Size(97, 22);
             this.ptSize10.Text = "10pt";
             this.ptSize10.Click += new System.EventHandler(this.ptSize10_Click);
             // 
             // ptSize11
             // 
             this.ptSize11.Name = "ptSize11";
-            this.ptSize11.Size = new System.Drawing.Size(152, 22);
+            this.ptSize11.Size = new System.Drawing.Size(97, 22);
             this.ptSize11.Text = "11pt";
             this.ptSize11.Click += new System.EventHandler(this.ptSize11_Click);
             // 
             // ptSize12
             // 
             this.ptSize12.Name = "ptSize12";
-            this.ptSize12.Size = new System.Drawing.Size(152, 22);
+            this.ptSize12.Size = new System.Drawing.Size(97, 22);
             this.ptSize12.Text = "12pt";
             this.ptSize12.Click += new System.EventHandler(this.ptSize12_Click);
             // 
             // ptSize14
             // 
             this.ptSize14.Name = "ptSize14";
-            this.ptSize14.Size = new System.Drawing.Size(152, 22);
+            this.ptSize14.Size = new System.Drawing.Size(97, 22);
             this.ptSize14.Text = "14pt";
             this.ptSize14.Click += new System.EventHandler(this.ptSize14_Click);
             // 
             // ptSize16
             // 
             this.ptSize16.Name = "ptSize16";
-            this.ptSize16.Size = new System.Drawing.Size(152, 22);
+            this.ptSize16.Size = new System.Drawing.Size(97, 22);
             this.ptSize16.Text = "16pt";
             this.ptSize16.Click += new System.EventHandler(this.ptSize16_Click);
             // 
             // ptSize24
             // 
             this.ptSize24.Name = "ptSize24";
-            this.ptSize24.Size = new System.Drawing.Size(152, 22);
+            this.ptSize24.Size = new System.Drawing.Size(97, 22);
             this.ptSize24.Text = "24pt";
             this.ptSize24.Click += new System.EventHandler(this.ptSize24_Click);
             // 
             // ptSize36
             // 
             this.ptSize36.Name = "ptSize36";
-            this.ptSize36.Size = new System.Drawing.Size(152, 22);
+            this.ptSize36.Size = new System.Drawing.Size(97, 22);
             this.ptSize36.Text = "36pt";
             this.ptSize36.Click += new System.EventHandler(this.ptSize36_Click);
             // 
             // ptSize48
             // 
             this.ptSize48.Name = "ptSize48";
-            this.ptSize48.Size = new System.Drawing.Size(152, 22);
+            this.ptSize48.Size = new System.Drawing.Size(97, 22);
             this.ptSize48.Text = "48pt";
             this.ptSize48.Click += new System.EventHandler(this.ptSize48_Click);
             // 
             // ptSize72
             // 
             this.ptSize72.Name = "ptSize72";
-            this.ptSize72.Size = new System.Drawing.Size(152, 22);
+            this.ptSize72.Size = new System.Drawing.Size(97, 22);
             this.ptSize72.Text = "72pt";
             this.ptSize72.Click += new System.EventHandler(this.ptSize72_Click);
             // 

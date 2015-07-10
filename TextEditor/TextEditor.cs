@@ -1,10 +1,10 @@
 ﻿#region USING
-    using System;
-    using System.Drawing;
-    using System.Drawing.Printing;
-    using System.IO;
-    using System.Text;
-    using System.Windows.Forms;
+using System;
+using System.Drawing;
+using System.Drawing.Printing;
+using System.IO;
+using System.Text;
+using System.Windows.Forms;
 #endregion
 
 namespace TextEditor
@@ -36,7 +36,7 @@ namespace TextEditor
         private void mOpen_Click(object sender, EventArgs e)
         {
             OpenFile();
-            
+            txtMessage.Text = "The file \"" + dOpen.SafeFileName + "\" has been opened. OH BOY, OH BOY, OH BOY";
         }
 
         private void mSave_Click(object sender, EventArgs e)
@@ -346,9 +346,9 @@ namespace TextEditor
             SaveFile();
         }
 
-     #endregion
+        #endregion
 
-     #region Open Methods
+        #region Open Methods
 
         private void OpenFile()
         {
@@ -356,16 +356,21 @@ namespace TextEditor
 
             dOpen.Title = "Select as File to open";
             dOpen.Filter = "Rich Text File|*.rtf|All File Types|*.*";
-           
+
 
             if (dOpen.ShowDialog() != DialogResult.OK) return;
-            
+
             try
             {
                 sr = new StreamReader(File.OpenRead(dOpen.FileName));
                 txt.Rtf = sr.ReadToEnd();
+
                 filepath = dOpen.FileName;
-                txtMessage.Text = "The file \"" + dOpen.SafeFileName + "\" has been opened. HUZZAR";
+
+                txt.SelectAll();
+                txt.SelectionFont = new Font("Calibri", 12);
+                txt.Select(0, 0);
+                MoveCursor();
             }
             catch (Exception e)
             {
@@ -375,12 +380,22 @@ namespace TextEditor
             finally
             {
                 if (sr != null) sr.Close();
-            }  
+            }
+
+        }
+        #endregion
+
+        private void MoveCursor()
+        {
+            // Set the Current cursor, move the cursor's Position, 
+            // and set its clipping rectangle to the form.  
+
+            this.Cursor = new Cursor(Cursor.Current.Handle);
+            Cursor.Position = new Point(Cursor.Position.X - 50, Cursor.Position.Y - 50);
+            //Cursor.Clip = new Rectangle(this.Location, this.Size);
         }
 
-     #endregion
-
-     #region Print Methods
+        #region Print Methods
 
         private void PrintFile()
         {
