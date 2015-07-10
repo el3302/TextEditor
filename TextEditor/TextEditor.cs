@@ -166,8 +166,9 @@ namespace TextEditor
 
         #endregion
 
-     #region Toolbar
+        #region Toolbar
 
+        #region Font
         private void ptCalibri_Click(object sender, EventArgs e)
         {
             txt.SelectionFont = new Font("Calibri", txt.Font.Size);
@@ -182,31 +183,54 @@ namespace TextEditor
         {
             txt.SelectionFont = new Font("Times", txt.Font.Size);
         }
+        #endregion
 
-        private void ptSize8_Click(object sender, EventArgs e)
+        public void fontSize_Click(object sender, EventArgs e)
         {
-            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 8);
+            switch (tFontSize.Name)
+            {
+                case tFontSize.ptSize8:
+                    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 8);
+                    break;
+                case ptSize9:
+                    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 9);
+                    break;
+                case ptSize10:
+                    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 10);
+                    break;
+                case ptSize11:
+                    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 11);
+                    break;
+                case ptSize12:
+                    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 12);
+                    break;
+            }
         }
+        
+        //private void ptSize8_Click(object sender, EventArgs e)
+        //{
+        //    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 8);
+        //}
 
-        private void ptSize9_Click(object sender, EventArgs e)
-        {
-            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 9);
-        }
+        //private void ptSize9_Click(object sender, EventArgs e)
+        //{
+        //    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 9);
+        //}
 
-        private void ptSize10_Click(object sender, EventArgs e)
-        {
-            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 10);
-        }
+        //private void ptSize10_Click(object sender, EventArgs e)
+        //{
+        //    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 10);
+        //}
 
-        private void ptSize11_Click(object sender, EventArgs e)
-        {
-            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 11);
-        }
+        //private void ptSize11_Click(object sender, EventArgs e)
+        //{
+        //    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 11);
+        //}
 
-        private void ptSize12_Click(object sender, EventArgs e)
-        {
-            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 12);
-        }
+        //private void ptSize12_Click(object sender, EventArgs e)
+        //{
+        //    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 12);
+        //}
 
         private void ptSize14_Click(object sender, EventArgs e)
         {
