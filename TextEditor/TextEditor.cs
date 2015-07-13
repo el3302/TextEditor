@@ -166,9 +166,8 @@ namespace TextEditor
 
         #endregion
 
-        #region Toolbar
+     #region Toolbar
 
-        #region Font
         private void ptCalibri_Click(object sender, EventArgs e)
         {
             txt.SelectionFont = new Font("Calibri", txt.Font.Size);
@@ -183,54 +182,31 @@ namespace TextEditor
         {
             txt.SelectionFont = new Font("Times", txt.Font.Size);
         }
-        #endregion
 
-        public void fontSize_Click(object sender, EventArgs e)
+        private void ptSize8_Click(object sender, EventArgs e)
         {
-            switch (tFontSize.Name)
-            {
-                case tFontSize.ptSize8:
-                    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 8);
-                    break;
-                case ptSize9:
-                    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 9);
-                    break;
-                case ptSize10:
-                    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 10);
-                    break;
-                case ptSize11:
-                    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 11);
-                    break;
-                case ptSize12:
-                    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 12);
-                    break;
-            }
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 8);
         }
-        
-        //private void ptSize8_Click(object sender, EventArgs e)
-        //{
-        //    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 8);
-        //}
 
-        //private void ptSize9_Click(object sender, EventArgs e)
-        //{
-        //    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 9);
-        //}
+        private void ptSize9_Click(object sender, EventArgs e)
+        {
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 9);
+        }
 
-        //private void ptSize10_Click(object sender, EventArgs e)
-        //{
-        //    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 10);
-        //}
+        private void ptSize10_Click(object sender, EventArgs e)
+        {
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 10);
+        }
 
-        //private void ptSize11_Click(object sender, EventArgs e)
-        //{
-        //    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 11);
-        //}
+        private void ptSize11_Click(object sender, EventArgs e)
+        {
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 11);
+        }
 
-        //private void ptSize12_Click(object sender, EventArgs e)
-        //{
-        //    txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 12);
-        //}
+        private void ptSize12_Click(object sender, EventArgs e)
+        {
+            txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 12);
+        }
 
         private void ptSize14_Click(object sender, EventArgs e)
         {
@@ -264,20 +240,51 @@ namespace TextEditor
 
         private void ptBold_Click(object sender, EventArgs e)
         {
-            boldFont = txt.SelectionFont;
-            txt.SelectionFont = new Font(boldFont, boldFont.Bold ? FontStyle.Regular : FontStyle.Bold);
+            //If the selected character is Bold 
+            if (txt.SelectionFont.Style.ToString().Contains("Bold"))
+            {
+                txt.SelectionFont = new Font(txt.SelectionFont, txt.SelectionFont.Style & ~FontStyle.Bold);
+            }
+            //If the selected character is unBold Make the selected character Bold
+            else
+            {
+                txt.SelectionFont = new Font(txt.SelectionFont, txt.SelectionFont.Style | FontStyle.Bold);
+            }
+
+            //boldFont = txt.SelectionFont;
+            //txt.SelectionFont = new Font(boldFont, boldFont.Bold ? FontStyle.Regular : FontStyle.Bold);
         }
 
         private void ptItalic_Click(object sender, EventArgs e)
         {
-            italicFont = txt.SelectionFont;
-            txt.SelectionFont = new Font(italicFont, italicFont.Italic ? FontStyle.Regular : FontStyle.Italic);
+            //If the selected character is Italic 
+            if (txt.SelectionFont.Style.ToString().Contains("Italic"))
+            {
+                txt.SelectionFont = new Font(txt.SelectionFont, txt.SelectionFont.Style & ~FontStyle.Italic);
+            }
+            //If the selected character is not Italic Make the selected character Italic
+            else
+            {
+                txt.SelectionFont = new Font(txt.SelectionFont, txt.SelectionFont.Style | FontStyle.Italic);
+            }
+            //italicFont = txt.SelectionFont;
+            //txt.SelectionFont = new Font(italicFont, italicFont.Italic ? FontStyle.Regular : FontStyle.Italic);
         }
 
         private void ptUnderline_Click(object sender, EventArgs e)
         {
-            underlineFont = txt.SelectionFont;
-            txt.SelectionFont = new Font(underlineFont, underlineFont.Underline ? FontStyle.Regular : FontStyle.Underline);
+            //If the selected character is Underline 
+            if (txt.SelectionFont.Style.ToString().Contains("Underline"))
+            {
+                txt.SelectionFont = new Font(txt.SelectionFont, txt.SelectionFont.Style & ~FontStyle.Underline);
+            }
+            //If the selected character is not underline Make the selected character Underline
+            else
+            {
+                txt.SelectionFont = new Font(txt.SelectionFont, txt.SelectionFont.Style | FontStyle.Underline);
+            }
+            //underlineFont = txt.SelectionFont;
+            //txt.SelectionFont = new Font(underlineFont, underlineFont.Underline ? FontStyle.Regular : FontStyle.Underline);
         }
 
      #endregion
