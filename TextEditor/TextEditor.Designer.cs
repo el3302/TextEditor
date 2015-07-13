@@ -95,8 +95,8 @@
             this.ptSize16 = new System.Windows.Forms.ToolStripMenuItem();
             this.ptSize24 = new System.Windows.Forms.ToolStripMenuItem();
             this.ptSize36 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ptSize48 = new System.Windows.Forms.ToolStripMenuItem();
             this.ptSize72 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ptSize48 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
             this.ptBold = new System.Windows.Forms.ToolStripButton();
             this.ptItalic = new System.Windows.Forms.ToolStripButton();
@@ -551,8 +551,8 @@
             this.ptSize16,
             this.ptSize24,
             this.ptSize36,
-            this.ptSize72,
-            this.ptSize48});
+            this.ptSize48,
+            this.ptSize72});
             this.tFontSize.Image = ((System.Drawing.Image)(resources.GetObject("tFontSize.Image")));
             this.tFontSize.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tFontSize.Name = "tFontSize";
@@ -565,77 +565,77 @@
             this.ptSize8.Name = "ptSize8";
             this.ptSize8.Size = new System.Drawing.Size(152, 22);
             this.ptSize8.Text = "8pt";
-            this.ptSize8.Click += new System.EventHandler(this.fontSize_Click);
+            this.ptSize8.Click += new System.EventHandler(this.ptSize8_Click);
             // 
             // ptSize9
             // 
             this.ptSize9.Name = "ptSize9";
             this.ptSize9.Size = new System.Drawing.Size(152, 22);
             this.ptSize9.Text = "9pt";
-            this.ptSize9.Click += new System.EventHandler(this.fontSize_Click);
+            this.ptSize9.Click += new System.EventHandler(this.ptSize9_Click);
             // 
             // ptSize10
             // 
             this.ptSize10.Name = "ptSize10";
             this.ptSize10.Size = new System.Drawing.Size(152, 22);
             this.ptSize10.Text = "10pt";
-            this.ptSize10.Click += new System.EventHandler(this.fontSize_Click);
+            this.ptSize10.Click += new System.EventHandler(this.ptSize10_Click);
             // 
             // ptSize11
             // 
             this.ptSize11.Name = "ptSize11";
             this.ptSize11.Size = new System.Drawing.Size(152, 22);
             this.ptSize11.Text = "11pt";
-            this.ptSize11.Click += new System.EventHandler(this.fontSize_Click);
+            this.ptSize11.Click += new System.EventHandler(this.ptSize11_Click);
             // 
             // ptSize12
             // 
             this.ptSize12.Name = "ptSize12";
             this.ptSize12.Size = new System.Drawing.Size(152, 22);
             this.ptSize12.Text = "12pt";
-            this.ptSize12.Click += new System.EventHandler(this.fontSize_Click);
+            this.ptSize12.Click += new System.EventHandler(this.ptSize12_Click);
             // 
             // ptSize14
             // 
             this.ptSize14.Name = "ptSize14";
             this.ptSize14.Size = new System.Drawing.Size(152, 22);
             this.ptSize14.Text = "14pt";
-            this.ptSize14.Click += new System.EventHandler(this.fontSize_Click);
+            this.ptSize14.Click += new System.EventHandler(this.ptSize14_Click);
             // 
             // ptSize16
             // 
             this.ptSize16.Name = "ptSize16";
             this.ptSize16.Size = new System.Drawing.Size(152, 22);
             this.ptSize16.Text = "16pt";
-            this.ptSize16.Click += new System.EventHandler(this.fontSize_Click);
+            this.ptSize16.Click += new System.EventHandler(this.ptSize16_Click);
             // 
             // ptSize24
             // 
             this.ptSize24.Name = "ptSize24";
             this.ptSize24.Size = new System.Drawing.Size(152, 22);
             this.ptSize24.Text = "24pt";
-            this.ptSize24.Click += new System.EventHandler(this.fontSize_Click);
+            this.ptSize24.Click += new System.EventHandler(this.ptSize24_Click);
             // 
             // ptSize36
             // 
             this.ptSize36.Name = "ptSize36";
             this.ptSize36.Size = new System.Drawing.Size(152, 22);
             this.ptSize36.Text = "36pt";
-            this.ptSize36.Click += new System.EventHandler(this.fontSize_Click);
-            // 
-            // ptSize48
-            // 
-            this.ptSize48.Name = "ptSize48";
-            this.ptSize48.Size = new System.Drawing.Size(152, 22);
-            this.ptSize48.Text = "48pt";
-            this.ptSize48.Click += new System.EventHandler(this.fontSize_Click);
+            this.ptSize36.Click += new System.EventHandler(this.ptSize36_Click);
             // 
             // ptSize72
             // 
             this.ptSize72.Name = "ptSize72";
             this.ptSize72.Size = new System.Drawing.Size(152, 22);
             this.ptSize72.Text = "72pt";
-            this.ptSize72.Click += new System.EventHandler(this.fontSize_Click);
+            this.ptSize72.Click += new System.EventHandler(this.ptSize72_Click);
+            // 
+            // ptSize48
+            // 
+            this.ptSize48.Name = "ptSize48";
+            this.ptSize48.Size = new System.Drawing.Size(152, 22);
+            this.ptSize48.Text = "48pt";
+            this.ptSize48.Click += new System.EventHandler(this.ptSize48_Click);
             // 
             // toolStripSeparator10
             // 
