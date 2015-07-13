@@ -1,7 +1,22 @@
+!! Release 2.0.0.8
+
+*//TEXT FORMATTING TOOLBAR*
+* Finally fixed the problem of not being able to select more than one font style at a time.
+
+*//RICH TEXT BOX*
+* When opening certain rtf files the font would not set to the appliction default.  This has been fixed by adding code to select all text and set the font to Calibri automatically.  Because of this you may see the text breifly haighlight be fore the cursor returns to the top left of the rft box.
+
+*//BUGS*
+* Nothing found or reported in this Release.
+
+*//TODO*
+* Code the Spelling menu item.
+* Code the Find menu item.
+
 !! Release 2.0.0.7
 
-*//TOOLs MENU DROPDOWN*
-* Removed the Insert Link from the Tools Menu.  Any text that starts http:// or Https:// automatically becomes a link.  The ability to add a link to 'normal' text will be considered as a future deature.
+*//TOOLS MENU DROPDOWN*
+* Removed the Insert Link from the Tools Menu.  Any text that starts http:// or Https:// automatically becomes a link.  The ability to add a link to 'normal' text will be considered as a future feature.
 
 *//BUGS*
 * Nothing found or reported in this Release.
@@ -29,7 +44,7 @@
 
   These should be completed in the near future.
   
-!! Release 2.0.0.4
+!! Release 2.0.0.5
 
 *//CHANGES*
 * This release was internal only.
