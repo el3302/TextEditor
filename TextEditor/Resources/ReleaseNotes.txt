@@ -1,3 +1,15 @@
+!! Release 2.0.0.9
+
+*//RICH TEXT BOX*
+* Fixed the tab not being accepted in the rtf box.  Changed preference to allowtabs=true.
+
+*//BUGS*
+* Nothing found or reported in this Release.
+
+*//TODO*
+* Code the Spelling menu item.
+* Code the Find menu item.
+
 !! Release 2.0.0.8
 
 *//TEXT FORMATTING TOOLBAR*
