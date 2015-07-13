@@ -108,6 +108,7 @@
             // 
             // txt
             // 
+            this.txt.AcceptsTab = true;
             this.txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt.ContextMenuStrip = this.cMenu;
             this.txt.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
