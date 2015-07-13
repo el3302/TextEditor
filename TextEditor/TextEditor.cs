@@ -16,9 +16,6 @@ namespace TextEditor
         private StreamReader sPrint;
         private StreamReader sr = null;
         private StreamWriter sw = null;
-        private Font boldFont;
-        private Font italicFont;
-        private Font underlineFont;
 
         public textEditor()
         {
@@ -168,6 +165,7 @@ namespace TextEditor
 
      #region Toolbar
 
+        #region FONT
         private void ptCalibri_Click(object sender, EventArgs e)
         {
             txt.SelectionFont = new Font("Calibri", txt.Font.Size);
@@ -182,7 +180,9 @@ namespace TextEditor
         {
             txt.SelectionFont = new Font("Times", txt.Font.Size);
         }
+        #endregion
 
+        #region SIZE
         private void ptSize8_Click(object sender, EventArgs e)
         {
             txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 8);
@@ -237,7 +237,9 @@ namespace TextEditor
         {
             txt.SelectionFont = new Font(txt.SelectionFont.FontFamily, 72);
         }
+        #endregion
 
+        #region STYLE
         private void ptBold_Click(object sender, EventArgs e)
         {
             //If the selected character is Bold 
@@ -250,9 +252,6 @@ namespace TextEditor
             {
                 txt.SelectionFont = new Font(txt.SelectionFont, txt.SelectionFont.Style | FontStyle.Bold);
             }
-
-            //boldFont = txt.SelectionFont;
-            //txt.SelectionFont = new Font(boldFont, boldFont.Bold ? FontStyle.Regular : FontStyle.Bold);
         }
 
         private void ptItalic_Click(object sender, EventArgs e)
@@ -267,8 +266,6 @@ namespace TextEditor
             {
                 txt.SelectionFont = new Font(txt.SelectionFont, txt.SelectionFont.Style | FontStyle.Italic);
             }
-            //italicFont = txt.SelectionFont;
-            //txt.SelectionFont = new Font(italicFont, italicFont.Italic ? FontStyle.Regular : FontStyle.Italic);
         }
 
         private void ptUnderline_Click(object sender, EventArgs e)
@@ -283,9 +280,8 @@ namespace TextEditor
             {
                 txt.SelectionFont = new Font(txt.SelectionFont, txt.SelectionFont.Style | FontStyle.Underline);
             }
-            //underlineFont = txt.SelectionFont;
-            //txt.SelectionFont = new Font(underlineFont, underlineFont.Underline ? FontStyle.Regular : FontStyle.Underline);
         }
+        #endregion
 
      #endregion
 
@@ -379,7 +375,7 @@ namespace TextEditor
 
         #endregion
 
-        #region Open Methods
+     #region Open Methods
 
         private void OpenFile()
         {
@@ -416,6 +412,7 @@ namespace TextEditor
         }
         #endregion
 
+     #region MOVE CURSOR
         private void MoveCursor()
         {
             // Set the Current cursor, move the cursor's Position, 
@@ -425,8 +422,9 @@ namespace TextEditor
             Cursor.Position = new Point(Cursor.Position.X - 50, Cursor.Position.Y - 50);
             //Cursor.Clip = new Rectangle(this.Location, this.Size);
         }
+        #endregion
 
-        #region Print Methods
+     #region Print Methods
 
         private void PrintFile()
         {
