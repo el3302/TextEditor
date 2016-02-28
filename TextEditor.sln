@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextEditor", "TextEditor\TextEditor.csproj", "{93545A5A-CB48-4BA0-951F-72FDE1E10308}"
 EndProject
@@ -21,12 +21,13 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
+		SccNumberOfProjects = 1
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs32
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = TextEditor\\TextEditor.csproj
-		SccProjectName1 = TextEditor
-		SccLocalPath1 = TextEditor
+		SccProjectUniqueName0 = TextEditor\\TextEditor.csproj
+		SccProjectName0 = TextEditor
+		SccAuxPath0 = https://tfs.codeplex.com/tfs/tfs32
+		SccLocalPath0 = TextEditor
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 	EndGlobalSection
 EndGlobal
