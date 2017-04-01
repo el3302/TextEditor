@@ -2,7 +2,7 @@
 Docs being developed at the moment
 
 # Screenshots
-![](Documentation_mainScreen.png)
+![](https://github.com/el3302/TextEditor/blob/master/docs/Documentation_mainScreen.PNG)
 
 # Release Notes
 ## Release 2.0.0.8
