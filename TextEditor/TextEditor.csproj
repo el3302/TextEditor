@@ -59,10 +59,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>68E9DD9E1C336A064763B97B3A2D5B260A25906C</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>3823FFC0281C95AE049B27A8502A9C8106C0A355</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>TextEditor_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>TextEditor_3_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -147,7 +147,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="TextEditor_TemporaryKey.pfx" />
+    <None Include="TextEditor_3_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

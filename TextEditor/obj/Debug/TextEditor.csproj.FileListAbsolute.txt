@@ -1,0 +1,16 @@
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\obj\Debug\TextEditor.AboutTextEditor.resources
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\obj\Debug\TextEditor.AboutComTech.resources
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\obj\Debug\TextEditor.ReleaseNotes.resources
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\obj\Debug\TextEditor.textEditor.resources
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\obj\Debug\TextEditor.Properties.Resources.resources
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\obj\Debug\TextEditor.csproj.GenerateResource.Cache
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\obj\Debug\TextEditor.exe
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\obj\Debug\TextEditor.pdb
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\bin\Debug\TextEditor.exe.config
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\bin\Debug\TextEditor.exe.manifest
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\bin\Debug\TextEditor.application
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\bin\Debug\TextEditor.exe
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\bin\Debug\TextEditor.pdb
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\obj\Debug\TextEditor.exe.manifest
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\obj\Debug\TextEditor.application
+C:\Users\iainm\Source\Repos\TextEditor\TextEditor\obj\Debug\TextEditor.csprojResolveAssemblyReference.cache
